@@ -1,5 +1,6 @@
 def isPalindrome(word):
-    if word.lower()[::-1]==word.lower():
+    word=word.lower().strip(' ')
+    if word[::-1]== word:
         return True
     else:
         return False
